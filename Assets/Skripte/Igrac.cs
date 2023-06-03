@@ -6,13 +6,13 @@ public class Igrac : MonoBehaviour
     [SerializeField] Image barGoriva;
     [SerializeField] Text brojPutnika;
     public float Gorivo { get; set; } = 600.0f;
-    public int BrojPutnika { get; set; } = 0;
+    public int BrojPutnika { get; private set; } = 0;
 
     void Start() => this.PostaviKolicinuGoriva();
 
     void Update()
     {
-        if (this.Gorivo > 0.0f)
+        if (this.Gorivo < 0.0f)
         {
             Destroy(this.gameObject);
             return;
@@ -27,6 +27,8 @@ public class Igrac : MonoBehaviour
         Vector2 velicina = this.barGoriva.rectTransform.sizeDelta;
         this.barGoriva.rectTransform.sizeDelta = new Vector2(this.Gorivo, velicina.y);
     }
+
+    public void DodajPutnike(int putnici) => this.BrojPutnika += putnici;
 
     void OnCollisionEnter2D(Collision2D collision) => Destroy(this.gameObject);
 }

@@ -14,7 +14,7 @@ public class Riba : MonoBehaviour
     void Update()
     {
         Vector2 igracPoz = this.igrac.transform.position;
-        if (transform.position.x < igracPoz.x && Vector2.Distance(igracPoz, this.transform.position) < 100.0f)
+        if (this.transform.position.x < igracPoz.x && Vector2.Distance(igracPoz, this.transform.position) < 100.0f)
         {
             Destroy(gameObject);
             return;
@@ -31,6 +31,6 @@ public class Riba : MonoBehaviour
             return;
 
         this.igrac.Gorivo += this.jeOtrovna ? -20.0f : 20.0f;
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 }
