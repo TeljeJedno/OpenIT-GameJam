@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Angles:
   - m_Start: -180
-    m_End: 178
+    m_End: 66
     m_Order: 0
     m_Sprites:
     - {fileID: -1797935448, guid: 45a40180cc490b04ba3372fc3c890eb9, type: 3}
@@ -22,6 +22,11 @@ MonoBehaviour:
     - {fileID: -1107286939, guid: 45a40180cc490b04ba3372fc3c890eb9, type: 3}
     - {fileID: -1418082435, guid: 45a40180cc490b04ba3372fc3c890eb9, type: 3}
     - {fileID: -166786527, guid: 45a40180cc490b04ba3372fc3c890eb9, type: 3}
+    - {fileID: -812325720, guid: 45a40180cc490b04ba3372fc3c890eb9, type: 3}
+  - m_Start: 86
+    m_End: 110
+    m_Order: 0
+    m_Sprites:
     - {fileID: -812325720, guid: 45a40180cc490b04ba3372fc3c890eb9, type: 3}
   m_FillTexture: {fileID: 2800000, guid: 4672fe01a50ee4345914ec2ed3a3e400, type: 3}
   m_CornerSprites:
