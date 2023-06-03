@@ -12,6 +12,12 @@ public class Igrac : MonoBehaviour
 
     void Update()
     {
+        if (this.Gorivo > 0.0f)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+
         this.Gorivo -= 10.0f * Time.deltaTime;
         this.PostaviKolicinuGoriva();
     }
