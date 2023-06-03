@@ -2,32 +2,14 @@ using UnityEngine;
 
 public class Kretanje : MonoBehaviour
 {
-    bool isMoving = false;
-    Vector3 targetPosition;
-
+    [SerializeField] float brzina = 5.0f;
+    [SerializeField] DynamicJoystick dzojstik;
+    
     void Update()
     {
-        if (Input.touchCount == 0)
-            return;
-
-        Touch touch = Input.GetTouch(0);
-        if (touch.phase == TouchPhase.Began)
-            return;
-
-        isMoving = true;
-        targetPosition = Camera.main.ScreenToWorldPoint(touch.position);
-        targetPosition.z = transform.position.z;
-
-        if (targetPosition.x < transform.position.x)
-            return;
-
-        if (isMoving)
-        {
-            float step = 5f * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, targetPosition, step);
-
-            if (transform.position.y == targetPosition.y)
-                isMoving = false;
-        }
+        Vector2 cilj = this.transform.position;
+        cilj.x += this.dzojstik.Horizontal * this.brzina * Time.deltaTime;
+        cilj.y += this.dzojstik.Vertical * this.brzina * Time.deltaTime;
+        this.transform.position = Vector2.MoveTowards(this.transform.position, cilj, this.brzina * Time.deltaTime);
     }
 }

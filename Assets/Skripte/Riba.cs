@@ -30,8 +30,7 @@ public class Riba : MonoBehaviour
         if (!c.collider.gameObject.CompareTag("Igrac"))
             return;
 
-        Igrac igrac = c.collider.gameObject.GetComponent<Igrac>();
-        igrac.Gorivo += 10;
+        this.igrac.Gorivo += this.jeOtrovna ? -20.0f : 20.0f;
         Destroy(gameObject);
     }
 }

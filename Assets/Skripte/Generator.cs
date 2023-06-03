@@ -5,17 +5,10 @@ public class Generator : MonoBehaviour
     [SerializeField] GameObject riba;
     Vector2 pozicijaIgraca;
 
-    // Start is called before the first frame update
     void Start()
     {
         this.pozicijaIgraca = GameObject.FindGameObjectWithTag("Igrac").GetComponent<Igrac>().transform.position;
         StartCoroutine(StvarajRibu());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     System.Collections.IEnumerator StvarajRibu()
