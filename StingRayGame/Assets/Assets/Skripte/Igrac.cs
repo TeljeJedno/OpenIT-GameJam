@@ -5,6 +5,7 @@ public class Igrac : MonoBehaviour
 {
     [SerializeField] Image barGoriva;
     [SerializeField] Text brojPutnika;
+    private string easteregg = "hello";
     public float Gorivo { get; set; } = 600.0f;
     public int BrojPutnika { get; private set; } = 0;
 
