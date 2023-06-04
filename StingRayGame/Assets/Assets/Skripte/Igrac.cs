@@ -35,6 +35,12 @@ public class Igrac : MonoBehaviour
         if (collision.collider.CompareTag("Riba"))
             return;
 
+        if (collision.collider.CompareTag("Zamka"))
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+
         if (collision.collider.CompareTag("Putnik"))
         {
             this.BrojPutnika++;
