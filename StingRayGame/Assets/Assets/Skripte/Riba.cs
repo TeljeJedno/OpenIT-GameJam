@@ -27,10 +27,9 @@ public class Riba : MonoBehaviour
 
     void OnCollisionEnter(Collision c)
     {
-        if (!c.collider.gameObject.CompareTag("Igrac"))
-            return;
+        if (c.collider.gameObject.CompareTag("Igrac"))
+            this.igrac.Gorivo += this.jeOtrovna ? -20.0f : 20.0f;
 
-        this.igrac.Gorivo += this.jeOtrovna ? -20.0f : 20.0f;
         Destroy(this.gameObject);
     }
 }

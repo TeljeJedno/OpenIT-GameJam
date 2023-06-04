@@ -2,21 +2,12 @@ using UnityEngine;
 
 public class KupljanjePutnika : MonoBehaviour
 {
-    GameObject[] putnici;
-
-    void Start() => this.putnici = GameObject.FindGameObjectsWithTag("Putnik");
-
-    void OnTriggerEnter2D(Collider2D collision) => StartCoroutine(PokupiPutnike());
-
-    System.Collections.IEnumerator PokupiPutnike()
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        foreach (GameObject putnik in this.putnici)
-        {
-            yield return new WaitForSeconds(1.0f);
+        if (collision.gameObject.CompareTag("Putnik"))
+            return;
 
-            Destroy(putnik);
-        }
-
-        //Destroy(this.gameObject);
+        for (int i = 0; i < this.transform.childCount; i++)
+            this.transform.GetChild(i).gameObject.GetComponent<Animator>().enabled = true;
     }
 }

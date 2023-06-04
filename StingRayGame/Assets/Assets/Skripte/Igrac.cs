@@ -1,10 +1,11 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Igrac : MonoBehaviour
 {
     [SerializeField] Image barGoriva;
-    [SerializeField] Text brojPutnika;
+    [SerializeField] TextMeshProUGUI brojPutnika;
     private string easteregg = "hello";
     public float Gorivo { get; set; } = 600.0f;
     public int BrojPutnika { get; private set; } = 0;
@@ -29,13 +30,15 @@ public class Igrac : MonoBehaviour
         this.barGoriva.rectTransform.sizeDelta = new Vector2(this.Gorivo, velicina.y);
     }
 
-    public void DodajPutnike(int putnici) => this.BrojPutnika += putnici;
-
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Riba"))
             return;
 
-        Destroy(this.gameObject);
+        if (collision.collider.CompareTag("Putnik"))
+        {
+            this.BrojPutnika++;
+            Destroy(collision.collider.gameObject);
+        }
     }
 }
