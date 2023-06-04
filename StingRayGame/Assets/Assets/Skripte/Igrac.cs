@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Igrac : MonoBehaviour
@@ -38,6 +39,7 @@ public class Igrac : MonoBehaviour
         if (collision.collider.CompareTag("Zamka"))
         {
             Destroy(this.gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             return;
         }
 

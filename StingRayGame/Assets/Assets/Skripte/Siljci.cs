@@ -1,4 +1,6 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Siljci : MonoBehaviour
 {
@@ -23,5 +25,14 @@ public class Siljci : MonoBehaviour
 
         (this.inicijalnaPozicija, this.krajnjaPozicija) = (this.krajnjaPozicija, this.inicijalnaPozicija);
         this.pravac = -this.pravac;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!collision.CompareTag("Igrac"))
+            return;
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Destroy(collision.gameObject);
     }
 }
