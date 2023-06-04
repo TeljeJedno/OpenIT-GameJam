@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2013833242557274649}
   m_Layer: 0
   m_Name: Riba
-  m_TagString: Untagged
+  m_TagString: Riba
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

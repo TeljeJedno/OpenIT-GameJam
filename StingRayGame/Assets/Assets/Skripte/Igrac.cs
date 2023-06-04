@@ -31,5 +31,11 @@ public class Igrac : MonoBehaviour
 
     public void DodajPutnike(int putnici) => this.BrojPutnika += putnici;
 
-    void OnCollisionEnter2D(Collision2D collision) => Destroy(this.gameObject);
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Riba"))
+            return;
+
+        Destroy(this.gameObject);
+    }
 }
