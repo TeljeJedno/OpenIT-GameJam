@@ -113,10 +113,10 @@ TextureImporter:
       name: stingray-Sheet_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 70
-        width: 160
-        height: 79
+        x: 0
+        y: 40
+        width: 180
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: stingray-Sheet_1
       rect:
         serializedVersion: 2
-        x: 187
-        y: 56
-        width: 160
-        height: 82
+        x: 180
+        y: 40
+        width: 180
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: stingray-Sheet_2
       rect:
         serializedVersion: 2
-        x: 363
-        y: 67
-        width: 160
-        height: 48
+        x: 360
+        y: 40
+        width: 180
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: stingray-Sheet_3
       rect:
         serializedVersion: 2
-        x: 550
-        y: 68
-        width: 156
-        height: 32
+        x: 540
+        y: 40
+        width: 180
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: stingray-Sheet_4
       rect:
         serializedVersion: 2
-        x: 734
-        y: 66
-        width: 148
-        height: 25
+        x: 720
+        y: 40
+        width: 180
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: stingray-Sheet_5
       rect:
         serializedVersion: 2
-        x: 913
-        y: 65
-        width: 149
-        height: 23
+        x: 900
+        y: 40
+        width: 180
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: stingray-Sheet_6
       rect:
         serializedVersion: 2
-        x: 1094
-        y: 57
-        width: 147
-        height: 35
+        x: 1080
+        y: 40
+        width: 180
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: stingray-Sheet_7
       rect:
         serializedVersion: 2
-        x: 1279
-        y: 53
-        width: 141
-        height: 46
+        x: 1260
+        y: 40
+        width: 180
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
