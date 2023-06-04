@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 92ca22945ab784f4aac90463520bb902
+guid: e983ade9247601c45846b177ef4b7ba2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: stingray-Sheet_0
+      name: player-idle_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 40
-        width: 180
-        height: 120
+        x: 31
+        y: 16
+        width: 24
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edc35cc337527494ca936f904733c041
-      internalID: -442052083
+      spriteID: 3e639422986e90d478586126f1c08712
+      internalID: -1050360990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stingray-Sheet_1
+      name: player-idle_1
       rect:
         serializedVersion: 2
-        x: 180
-        y: 40
-        width: 180
-        height: 120
+        x: 109
+        y: 15
+        width: 29
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 414baafbe8d671743b2d93a1dbee5ef8
-      internalID: -236972352
+      spriteID: 19233e01010215d46891f8f0302e18a1
+      internalID: -705906656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stingray-Sheet_2
+      name: player-idle_2
       rect:
         serializedVersion: 2
-        x: 360
-        y: 40
-        width: 180
-        height: 120
+        x: 187
+        y: 14
+        width: 33
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa509426dbf1ede4887d2fdbcda331ff
-      internalID: 200799875
+      spriteID: 2aded15ec51dfc044a8e334d7308f75f
+      internalID: -1990151883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stingray-Sheet_3
+      name: player-idle_3
       rect:
         serializedVersion: 2
-        x: 540
-        y: 40
-        width: 180
-        height: 120
+        x: 264
+        y: 11
+        width: 39
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2601a27802706643bd7aff137739965
-      internalID: 1177886101
+      spriteID: 86d9843ee7ceffa40999b3a3c2476785
+      internalID: 1079286650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stingray-Sheet_4
+      name: player-idle_4
       rect:
         serializedVersion: 2
-        x: 720
-        y: 40
-        width: 180
-        height: 120
+        x: 347
+        y: 14
+        width: 33
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1cfdc25754ac6d47aa58941aa195f85
-      internalID: 1562105757
+      spriteID: b2bb8a887240d5149a651c8e7fcc7d25
+      internalID: 21915962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stingray-Sheet_5
+      name: player-idle_5
       rect:
         serializedVersion: 2
-        x: 900
-        y: 40
-        width: 180
-        height: 120
+        x: 429
+        y: 15
+        width: 29
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,50 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca5da682fc1e1e941b10eacfab61bcd4
-      internalID: -1287990508
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stingray-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 1080
-        y: 40
-        width: 180
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e5c48bf4bad3c44aa2f72e57e5c8f45
-      internalID: -1017818856
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stingray-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 1260
-        y: 40
-        width: 180
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c76227764d4163b4ba3dcdc3b43adc93
-      internalID: 1421733948
+      spriteID: 687f9e9441148684493b86c193ea8672
+      internalID: 821839863
       vertices: []
       indices: 
       edges: []
@@ -288,14 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      stingray-Sheet_0: -442052083
-      stingray-Sheet_1: -236972352
-      stingray-Sheet_2: 200799875
-      stingray-Sheet_3: 1177886101
-      stingray-Sheet_4: 1562105757
-      stingray-Sheet_5: -1287990508
-      stingray-Sheet_6: -1017818856
-      stingray-Sheet_7: 1421733948
+      player-idle_0: -1050360990
+      player-idle_1: -705906656
+      player-idle_2: -1990151883
+      player-idle_3: 1079286650
+      player-idle_4: 21915962
+      player-idle_5: 821839863
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
